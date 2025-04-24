@@ -13,35 +13,35 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Command
 
-`npm create vite@latest` - Create New React Project
-`npm install`
-`npm run dev`
+1. npm create vite@latest` - Create New React Project
+2. `npm install`
+3. `npm run dev`
 
 # React Project Structure
 
 ## 📁 Root Directory
 
-my-react-app/ ├── 📁 public/
-│ ├── index.html
-│ └── favicon.ico
-├── 📁 src/
-│ ├── 📁 assets/ # Images, fonts, and other static assets
-│ ├── 📁 components/ # Reusable UI components
-│ ├── 📁 features/ # Feature-specific components and logic
-│ ├── 📁 pages/ # Top-level page components
-│ ├── 📁 layouts/ # Layout components (Header, Sidebar, etc.)
-│ ├── 📁 routes/ # React Router setup and route configs
-│ ├── 📁 hooks/ # Custom hooks
-│ ├── 📁 contexts/ # React Contexts for global state
-│ ├── 📁 services/ # API calls and service logic
-│ ├── 📁 utils/ # Utility/helper functions
-│ ├── 📁 constants/ # Constants and config
-│ ├── App.jsx # Main App component
-│ ├── main.jsx # Entry point for the React app
-│ └── index.css # Global styles
-├── .gitignore
-├── package.json
-├── README.md
+my-react-app/ ├── 📁 public/  
+│ ├── index.html  
+│ └── favicon.ico  
+├── 📁 src/  
+│ ├── 📁 assets/ # Images, fonts, and other static assets  
+│ ├── 📁 components/ # Reusable UI components  
+│ ├── 📁 features/ # Feature-specific components and logic  
+│ ├── 📁 pages/ # Top-level page components  
+│ ├── 📁 layouts/ # Layout components (Header, Sidebar, etc.)  
+│ ├── 📁 routes/ # React Router setup and route configs  
+│ ├── 📁 hooks/ # Custom hooks  
+│ ├── 📁 contexts/ # React Contexts for global state  
+│ ├── 📁 services/ # API calls and service logic  
+│ ├── 📁 utils/ # Utility/helper functions  
+│ ├── 📁 constants/ # Constants and config  
+│ ├── App.jsx # Main App component  
+│ ├── main.jsx # Entry point for the React app  
+│ └── index.css # Global styles  
+├── .gitignore  
+├── package.json  
+├── README.md  
 └── vite.config.js / webpack.config.js
 
 ## 🧩 Feature Folder Example (Inside `features/`)
