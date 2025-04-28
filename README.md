@@ -13,7 +13,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Command
 
-1. npm create vite@latest` - Create New React Project
+1. `npm create vite@latest` - Create New React Project
 2. `npm install`
 3. `npm run dev`
 
@@ -76,4 +76,83 @@ export default defineConfig({
     sourcemap: true,
   },
 });
+```
+
+# Component Styles in React
+
+In React, component styles define how your UI components look.  
+There are several main ways to style components:
+
+
+
+## 1. Inline Styles
+
+Directly adding style as an object inside the component.
+
+```jsx
+function Button() {
+  return (
+    <button
+      style={{ backgroundColor: "blue", color: "white", padding: "10px" }}
+    >
+      Click Me
+    </button>
+  );
+}
+```
+
+##  2. CSS Stylesheets (Plain CSS Files)
+Create a .css file and import it into the component.
+
+```css
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+
+```
+
+```jsx
+import './Button.css';
+
+function Button() {
+  return <button className="button">Click Me</button>;
+}
+```
+
+## 3. CSS Modules
+Scoped CSS to avoid class name conflicts.
+
+Button.module.css
+
+```css 
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+```
+
+Button.jsx
+```jsx
+import styles from './Button.module.css';
+
+function Button() {
+  return <button className={styles.button}>Click Me</button>;
+}
+```
+
+## 4. Tailwind CSS
+
+Utility-first CSS framework using classes in JSX.
+
+```jsx
+function Button() {
+  return (
+    <button className="bg-blue-500 text-white py-2 px-4 rounded">
+      Click Me
+    </button>
+  );
+}
 ```
